@@ -1,0 +1,153 @@
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+body, html {
+  overflow: auto;
+}
+
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.6em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+}
+
+.timings p {
+  font-size: 1.5em;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.progress-container {
+  margin: 25px 0;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progress {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+#remaining-time, #percentage {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.duas {
+  margin-top: 20px;
+}
+
+.duas button {
+  margin: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff6f61, #ffcc00);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.duas button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
+}
+
+#dua-text {
+  margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 1.0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+.profile {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile p {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
